@@ -7,14 +7,14 @@ import java.util.List;
 public class WindowsFunctions {
 
     public File getWindowsDownloadsFolder() {
-        List<String> commonDownloadPaths = Arrays.asList(
+        final List<String> commonDownloadPaths = Arrays.asList(
                 System.getProperty("user.home") + File.separator + "Downloads",
                 "C:" + File.separator + "Users" + File.separator + "Public" + File.separator + "Downloads",
                 "C:" + File.separator + "Users" + File.separator + "Default" + File.separator + "Downloads"
         );
 
-        for (String path : commonDownloadPaths) {
-            File downloadsFolder = new File(path);
+        for (final String path : commonDownloadPaths) {
+            final File downloadsFolder = new File(path);
             if (downloadsFolder.exists() && downloadsFolder.isDirectory()) {
                 return downloadsFolder;
             }
