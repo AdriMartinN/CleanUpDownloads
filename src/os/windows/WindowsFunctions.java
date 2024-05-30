@@ -1,17 +1,25 @@
 package os.windows;
 
-import javax.swing.filechooser.FileSystemView;
 import java.io.File;
-import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.List;
 
 public class WindowsFunctions {
 
     public File getWindowsDownloadsFolder() {
-        final Path downloadsPath = FileSystemView.getFileSystemView()
-                .getDefaultDirectory()
-                .toPath()
-                .resolve("Downloads");
-        return downloadsPath.toFile();
+        List<String> commonDownloadPaths = Arrays.asList(
+                System.getProperty("user.home") + File.separator + "Downloads",
+                "C:" + File.separator + "Users" + File.separator + "Public" + File.separator + "Downloads",
+                "C:" + File.separator + "Users" + File.separator + "Default" + File.separator + "Downloads"
+        );
+
+        for (String path : commonDownloadPaths) {
+            File downloadsFolder = new File(path);
+            if (downloadsFolder.exists() && downloadsFolder.isDirectory()) {
+                return downloadsFolder;
+            }
+        }
+
+        return null;
     }
 }
-
