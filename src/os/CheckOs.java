@@ -25,7 +25,7 @@ public class CheckOs {
         if (osName.contains("win")) {
             return this.windowsFunctions.getWindowsDownloadsFolder();
         } else if (osName.contains("mac")) {
-            return this.macOsFunctions.getMacOsDownloadsFolder(userHome);
+            return this.macOsFunctions.getMacOsDownloadsFolder();
         } else if (osName.contains("nux")) {
             return this.linuxFunctions.getLinuxDownloadsFolder(userHome);
         } else {
