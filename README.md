@@ -8,8 +8,7 @@ CleanUpDownloads is a Java program designed to delete all contents of the Downlo
 - Efficiently deletes all files and subdirectories within the Downloads folder.
 
 ## Prerequisites
-
-- Java Development Kit (JDK) 17
+- [Java Development Kit (JDK) 17]( https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ## Download
-[CleanUpDownloads.jar](https://github.com/AdriMartinN/CleanUpDownloads/releases/download/1.0.0/CleanUpDownloads.jar)
+- [CleanUpDownloads.jar](https://github.com/AdriMartinN/CleanUpDownloads/releases/download/1.0.0/CleanUpDownloads.jar)
