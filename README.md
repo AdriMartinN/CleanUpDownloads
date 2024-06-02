@@ -1,6 +1,6 @@
-# ClearDownloads
+# CleanUpDownloads
 
-ClearDownloads is a Java program designed to delete all contents of the Downloads folder across different operating systems: Linux, Windows, and macOS. This tool helps in maintaining a clean and organized system by regularly clearing out accumulated files in the Downloads directory.
+CleanUpDownloads is a Java program designed to delete all contents of the Downloads folder across different operating systems: Linux, Windows, and macOS. This tool helps in maintaining a clean and organized system by regularly clearing out accumulated files in the Downloads directory.
 
 ## Features
 
@@ -9,4 +9,7 @@ ClearDownloads is a Java program designed to delete all contents of the Download
 
 ## Prerequisites
 
-- Java Development Kit (JDK) 17 or higher
+- Java Development Kit (JDK) 17
+
+## Download
+[CleanUpDownloads.jar](https://github.com/AdriMartinN/CleanUpDownloads/releases/download/1.0.0/CleanUpDownloads.jar)
